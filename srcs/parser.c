@@ -55,7 +55,7 @@ void write_progress(FILE	*fp, t_method **methods) {
 	ptr = *methods;
 
 	fputs("| Method      | Status |\n", fp);
-	fputs("|  :----:  |  :----:  |\n", fp);
+	fputs("|  :---     |  :----:  |\n", fp);
 
 	while (ptr != NULL) {
 		if (ptr->path != NULL)
