@@ -91,6 +91,8 @@ int main(int argc, char *argv[])
 	handler_openapi(fp_openapi, &flags, &method);
 
 	output_file = fopen("progress.md", "w");
+	if (output_file == NULL)
+        exit(EXIT_FAILURE);
 	calculate_total_count(&method, &counter);
 	write_progress(output_file, &method, &counter);
 
