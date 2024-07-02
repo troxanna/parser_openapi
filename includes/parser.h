@@ -31,6 +31,13 @@ typedef struct s_flags {
 }				t_flags;
 
 
+typedef struct s_counter
+{
+	int total_count;
+	int completed_count;
+	int inprogress_count;
+}				t_counter;
+
 typedef struct s_method
 {
 	int status;
@@ -59,8 +66,11 @@ t_method 	*new_item(void);
 void		add_item(t_method **methods, t_method *new_method,
 			void (*wrt)(char *type, t_method *method, int status, char *line), char *line, char *type, int status);
 t_method	*get_last_item(t_method **methods);
-void		init_data(t_flags *data);
+void		init_data(t_flags *flags, t_counter *counter);
 void		handler_openapi(FILE * fp_openapi, t_flags *flags, t_method **methods);
+void		calculate_total_count(t_method **methods, t_counter *counter);
+void		print_total_progress(FILE *fp, t_counter *counter);
+void		write_progress(FILE	*fp, t_method **methods, t_counter *counter);
 
 
 

@@ -12,6 +12,20 @@ void	free_item(t_method *item)
 	}
 }
 
+char* itoa(int val, int base){
+	
+	static char buf[32] = {0};
+	
+	int i = 30;
+	
+	for(; val && i ; --i, val /= base)
+	
+		buf[i] = "0123456789abcdef"[val % base];
+	
+	return &buf[i + 1];
+	
+}
+
 void	free_memory(t_method **methods)
 {
 	t_method	*new_item;
@@ -34,26 +48,35 @@ int is_allow_symbol(char ch) {
 	return 0;
 }
 
+void print_total_progress(FILE *fp, t_counter *counter) {
+	fputs("| Total:      | ", fp);
+	fprintf(fp, "%d", counter->total_count);
+	fputs("|\n", fp);
+
+	fputs("| Completed:      | ", fp);
+	fprintf(fp, "%d", counter->completed_count);
+	fputs("|\n", fp);
+
+	fputs("| Inprogress:      | ", fp);
+	fprintf(fp, "%d", counter->inprogress_count);
+	fputs("|\n\n", fp);
+}
+
 void print_method(char *path, int status, char *type, FILE *fp) {
 	fputs("|", fp);
-	// fputs(BLACK, fp);
 	fputs(type, fp);
 	fputs(" ", fp);
 	fputs(path, fp);
 	fputs("|", fp);
 	if (status == COMPLETED) {	
-		// fputs(GREEN, fp);
 		fputs("COMPLETED", fp);
 	} else if (status == INPROGRESS) {
-		// fputs(YELLOW, fp);
 		fputs("INPROGRESS", fp);
 	} else if (status == DEPRECATED) {
-		// fputs(RED, fp);
 		fputs("DEPRECATED", fp);
 	} else {
 		return ;
 	}
-	// fputs(BLACK, fp);
 	fputs("|\n", fp);
 }
 
@@ -156,9 +179,29 @@ t_method *get_last_item(t_method **methods) {
 }
 
 
-void init_data(t_flags *data) {
-	data->close_bracket = 0;
-	data->is_operation_id = 0;
-	data->open_bracket = 0;
-	data ->path_is_active = 0;
+void init_data(t_flags *flags, t_counter *counter) {
+	flags->close_bracket = 0;
+	flags->is_operation_id = 0;
+	flags->open_bracket = 0;
+	flags ->path_is_active = 0;
+
+	counter->total_count = 0;
+	counter->completed_count = 0;
+	counter->inprogress_count = 0;
+}
+
+void calculate_total_count(t_method **methods, t_counter *counter) {
+	t_method	*ptr;
+
+	ptr = *methods;
+	if (methods) {
+		while (ptr->next) {
+			if (ptr->status == COMPLETED) {
+				counter->completed_count++;
+			}
+			counter->total_count++;
+			ptr = ptr->next;
+		}
+	} 
+	counter->inprogress_count = counter->total_count - counter->completed_count;
 }

@@ -49,10 +49,12 @@ void handler_openapi(FILE * fp_openapi, t_flags *flags, t_method **methods) {
 		free(line);
 }
 
-void write_progress(FILE	*fp, t_method **methods) {
+void write_progress(FILE	*fp, t_method **methods, t_counter *counter) {
 	t_method *ptr = NULL;
-
+	
 	ptr = *methods;
+
+	print_total_progress(fp, counter);
 
 	fputs("| Method      | Status |\n", fp);
 	fputs("|  :---     |  :----:  |\n", fp);
@@ -71,6 +73,7 @@ int main(int argc, char *argv[])
 
 	t_method *method = NULL;
 	t_flags flags;
+	t_counter counter;
 
 	if (argc != 2) {
 		printf("%s", "Error count arguments");
@@ -82,13 +85,14 @@ int main(int argc, char *argv[])
         exit(EXIT_FAILURE);
 
 	//malloc memory and init data
-	init_data(&flags);	
+	init_data(&flags, &counter);	
 	add_item(&method, new_item(), write_item, NULL, NULL, NONE);
 
 	handler_openapi(fp_openapi, &flags, &method);
 
 	output_file = fopen("progress.md", "w");
-	write_progress(output_file, &method);
+	calculate_total_count(&method, &counter);
+	write_progress(output_file, &method, &counter);
 
     fclose(fp_openapi);
 	fclose(output_file);
