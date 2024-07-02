@@ -52,14 +52,19 @@ void print_total_progress(FILE *fp, t_counter *counter) {
 	fputs("| Total:      | ", fp);
 	fprintf(fp, "%d", counter->total_count);
 	fputs("|\n", fp);
+	fputs("|  :---     |  :----:  |\n", fp);
 
 	fputs("| Completed:      | ", fp);
 	fprintf(fp, "%d", counter->completed_count);
 	fputs("|\n", fp);
+	fputs("|  :---     |  :----:  |\n", fp);
 
 	fputs("| Inprogress:      | ", fp);
 	fprintf(fp, "%d", counter->inprogress_count);
-	fputs("|\n\n", fp);
+	fputs("|\n", fp);
+	fputs("|  :---     |  :----:  |\n", fp);
+
+	fputs("\n", fp);
 }
 
 void print_method(char *path, int status, char *type, FILE *fp) {
