@@ -5,7 +5,6 @@ void handler_openapi(FILE * fp_openapi, t_flags *flags, t_method **methods) {
 	ssize_t read;
     char * line = NULL;
     size_t len = 0;
-	size_t i = 0;
 
 	char *tmp_line = NULL;
 
@@ -32,10 +31,8 @@ void handler_openapi(FILE * fp_openapi, t_flags *flags, t_method **methods) {
 			if (search_item(GET, line) || search_item(POST, line)) {
 				if (search_item(GET, line)) {
 					add_item(methods, new_item(), write_item, tmp_line, "GET", INPROGRESS);
-					i++;
 				} else if (search_item(POST, line)) {
 					add_item(methods, new_item(), write_item, tmp_line, "POST", INPROGRESS);
-					i++;
 				}
 			}
 			if (search_item(OPEN_BRACKET, line)) {
@@ -48,12 +45,23 @@ void handler_openapi(FILE * fp_openapi, t_flags *flags, t_method **methods) {
     }
 	if (tmp_line)
 		free(tmp_line);
+	if (line)
+		free(line);
 }
 
-void write_progress(FILE	*fp) {
-	fputs("| Syntax      | Description |\n", fp);
+void write_progress(FILE	*fp, t_method **methods) {
+	t_method *ptr = NULL;
+
+	ptr = *methods;
+
+	fputs("| Method      | Status |\n", fp);
 	fputs("| :---        | 		  ---: |\n", fp);
-	
+
+	while (ptr != NULL) {
+		if (ptr->path != NULL)
+			print_method(ptr->path, ptr->status, ptr->type, fp);
+		ptr = ptr->next;
+	}	
 }
 
 int main(int argc, char *argv[])
@@ -62,7 +70,6 @@ int main(int argc, char *argv[])
 	FILE	*output_file;
 
 	t_method *method = NULL;
-	t_method *ptr = NULL;
 	t_flags flags;
 
 	if (argc != 2) {
@@ -77,18 +84,11 @@ int main(int argc, char *argv[])
 	//malloc memory and init data
 	init_data(&flags);	
 	add_item(&method, new_item(), write_item, NULL, NULL, NONE);
-	ptr = method;
 
 	handler_openapi(fp_openapi, &flags, &method);
 
 	output_file = fopen("progress.md", "w");
-
-	ptr = method;
-	write_progress(output_file);
-	while (ptr != NULL) {
-		print_method(ptr->path, ptr->status, ptr->type, output_file);
-		ptr = ptr->next;
-	}
+	write_progress(output_file, &method);
 
     fclose(fp_openapi);
 	fclose(output_file);

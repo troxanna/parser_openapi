@@ -59,11 +59,10 @@ void print_method(char *path, int status, char *type, FILE *fp) {
 void clear_not_allow_symbols(char *input, char *output) {
 	int count = 0;
 
-	int i = 0;
-	int j = 0;
-	int k = strlen(input);
+	size_t i = 0;
+	size_t j = 0;
 
-	for (int i = 0; i < strlen(input); i++) {
+	for (size_t i = 0; i < strlen(input); i++) {
 		if (!is_allow_symbol(input[i])) {
 			count++;
 		}
@@ -90,7 +89,7 @@ int search_item(char *query, char *input) {
 }
 
 void clear_line(char *line, size_t count) {
-	for (int i = 0; i < count; i++) {
+	for (size_t i = 0; i < count; i++) {
 		line[i] = '\0';
 	}
 }
