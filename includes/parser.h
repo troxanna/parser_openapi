@@ -18,10 +18,10 @@
 #define OPEN_BRACKET "{"
 
 //Colors
-#define RED "\033[31m"
-#define BLACK "\033[39m"
-#define GREEN "\033[92m"
-#define YELLOW "\033[33m"
+// #define RED "<span style=\"color:red\">some *blue* text</span>."
+// #define BLACK "\033[39m"
+// #define GREEN "\033[92m"
+// #define YELLOW "\033[33m"
 
 typedef struct s_flags {
 	int path_is_active;
