@@ -43,7 +43,7 @@ void print_method(char *path, int status, char *type, FILE *fp) {
 	fputs("|", fp);
 	if (status == COMPLETED) {	
 		// fputs(GREEN, fp);
-		fputs("$${\\color{green}COMPLETED}$$", fp);
+		fputs("COMPLETED", fp);
 	} else if (status == INPROGRESS) {
 		// fputs(YELLOW, fp);
 		fputs("INPROGRESS", fp);
