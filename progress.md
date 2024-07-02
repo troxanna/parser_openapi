@@ -1,353 +1,353 @@
 | Method      | Status |
-| :---        | 		  ---: |
-|GET/affiliate-calculator|INPROGRESS|
-|POST/affiliate-calculator|INPROGRESS|
-|GET/affiliate-contests|INPROGRESS|
-|GET/affiliate-contests/partner|INPROGRESS|
-|GET/affiliate-contests/partner-information|INPROGRESS|
-|GET/affiliate-contests/partner-tables|INPROGRESS|
-|GET/affiliate-contests/participate|INPROGRESS|
-|POST/affiliate-contests/participate|INPROGRESS|
-|GET/affiliate-contests/annual-ib-vietnam|INPROGRESS|
-|GET/affiliate-contests/lucky-ticket|INPROGRESS|
-|GET/affiliate|<span style="color:green">COMPLETED</span>.|
-|GET/affiliate/view|INPROGRESS|
-|GET/affiliate/view-referrals|<span style="color:green">COMPLETED</span>.|
-|GET/affiliate/network|INPROGRESS|
-|GET/affiliate/export-commissions|<span style="color:green">COMPLETED</span>.|
-|GET/affiliate/create-company|<span style="color:green">COMPLETED</span>.|
-|POST/affiliate/create-company|<span style="color:green">COMPLETED</span>.|
-|GET/affiliate/edit-company|<span style="color:green">COMPLETED</span>.|
-|POST/affiliate/edit-company|<span style="color:green">COMPLETED</span>.|
-|GET/affiliate/portfolio|INPROGRESS|
-|GET/affiliate/hold-information|INPROGRESS|
-|GET/affiliate/transfer|INPROGRESS|
-|POST/affiliate/transfer|INPROGRESS|
-|POST/affiliate/referral-link|INPROGRESS|
-|POST/affiliate/activation-deposit-click|INPROGRESS|
-|GET/affiliate/questionnaire|<span style="color:green">COMPLETED</span>.|
-|POST/affiliate/questionnaire|<span style="color:green">COMPLETED</span>.|
-|GET/affiliate/list-links|INPROGRESS|
-|GET/affiliate/search|<span style="color:green">COMPLETED</span>.|
-|GET/affiliate-programs|INPROGRESS|
-|POST/affiliate-programs|INPROGRESS|
-|GET/affiliate-programs/programs|INPROGRESS|
-|GET/affiliate-promo|INPROGRESS|
-|GET/affiliate-promo/banners|INPROGRESS|
-|GET/affiliate-promo/videos|INPROGRESS|
-|GET/affiliate-promo/campaign|INPROGRESS|
-|GET/affiliate-promo/landings|INPROGRESS|
-|GET/affiliate-promo/handouts|INPROGRESS|
-|GET/affiliate-promo/avatars|INPROGRESS|
-|GET/affiliate-promo/make-application|INPROGRESS|
-|POST/affiliate-promo/make-application|INPROGRESS|
-|GET/analytics|INPROGRESS|
-|GET/analytics/signals|INPROGRESS|
-|GET/analytics/calendar|INPROGRESS|
-|GET/analytics/calendar-filter|INPROGRESS|
-|GET/analytics/interest-rates|INPROGRESS|
-|GET/bring-friend|INPROGRESS|
-|GET/bring-friend/banner|INPROGRESS|
-|GET/chart/open|INPROGRESS|
-|GET/chart/get-history|INPROGRESS|
-|GET/chart/get-symbol-list|INPROGRESS|
-|GET/chart/get-users-trades|INPROGRESS|
-|GET/chart/get-bets|INPROGRESS|
-|GET/chart/status-instrument|INPROGRESS|
-|GET/chart/get-user-list-info|INPROGRESS|
-|GET/chart/analytics-get-country-list|INPROGRESS|
-|GET/chart/analytics-get-calendar|INPROGRESS|
-|GET/chart/analytics-state-list|INPROGRESS|
-|GET/chart/state-list|INPROGRESS|
-|GET/chart/state-favorite|INPROGRESS|
-|GET/chart/state-public|INPROGRESS|
-|GET/chart/state-get-by-id|INPROGRESS|
-|GET/chart/state-get-default|INPROGRESS|
-|GET/chart/state-delete|INPROGRESS|
-|GET/chart/state-delete-default|INPROGRESS|
-|GET/chart/template-list|INPROGRESS|
-|GET/chart/template-save|INPROGRESS|
-|GET/chart/template-get|INPROGRESS|
-|GET/chart/template-delete|INPROGRESS|
-|GET/chart/indicator-list|INPROGRESS|
-|GET/chart/indicator-save|INPROGRESS|
-|GET/chart/indicator-get|INPROGRESS|
-|GET/chart/indicator-rename|INPROGRESS|
-|GET/chart/indicator-delete|INPROGRESS|
-|GET/chart-profile/get-history|INPROGRESS|
-|GET/chart-profile/state-list|INPROGRESS|
-|GET/chart-profile/state-save|INPROGRESS|
-|GET/chart-profile/state-favorite|INPROGRESS|
-|GET/chart-profile/state-public|INPROGRESS|
-|GET/chart-profile/state-get-by-id|INPROGRESS|
-|GET/chart-profile/state-get-default|INPROGRESS|
-|GET/chart-profile/state-delete|INPROGRESS|
-|GET/chart-profile/state-delete-default|INPROGRESS|
-|GET/chart-profile/template-list|INPROGRESS|
-|GET/chart-profile/template-save|INPROGRESS|
-|GET/chart-profile/template-get|INPROGRESS|
-|GET/chart-profile/template-delete|INPROGRESS|
-|GET/chart-profile/indicator-list|INPROGRESS|
-|GET/chart-profile/indicator-save|INPROGRESS|
-|GET/chart-profile/indicator-get|INPROGRESS|
-|GET/chart-profile/indicator-rename|INPROGRESS|
-|GET/chart-profile/indicator-delete|INPROGRESS|
-|GET/chart-trader/get-history|INPROGRESS|
-|GET/chart-trader/state-list|INPROGRESS|
-|GET/chart-trader/state-save|INPROGRESS|
-|GET/chart-trader/state-favorite|INPROGRESS|
-|GET/chart-trader/state-public|INPROGRESS|
-|GET/chart-trader/state-get-by-id|INPROGRESS|
-|GET/chart-trader/state-get-default|INPROGRESS|
-|GET/chart-trader/state-delete|INPROGRESS|
-|GET/chart-trader/state-delete-default|INPROGRESS|
-|GET/chart-trader/template-list|INPROGRESS|
-|GET/chart-trader/template-save|INPROGRESS|
-|GET/chart-trader/template-get|INPROGRESS|
-|GET/chart-trader/template-delete|INPROGRESS|
-|GET/chart-trader/indicator-list|INPROGRESS|
-|GET/chart-trader/indicator-save|INPROGRESS|
-|GET/chart-trader/indicator-get|INPROGRESS|
-|GET/chart-trader/indicator-rename|INPROGRESS|
-|GET/chart-trader/indicator-delete|INPROGRESS|
-|GET/ct/get-list|INPROGRESS|
-|GET/ct/new|INPROGRESS|
-|POST/ct/new|INPROGRESS|
-|GET/ct/account-change-leverage|INPROGRESS|
-|POST/ct/account-change-leverage|INPROGRESS|
-|GET/ct/account-change-password|INPROGRESS|
-|POST/ct/account-change-password|INPROGRESS|
-|GET/demo/deposit|INPROGRESS|
-|GET/deposit/list|<span style="color:green">COMPLETED</span>.|
-|GET/deposit/list-grouped|<span style="color:green">COMPLETED</span>.|
-|GET/deposit/request|INPROGRESS|
-|POST/deposit/request|INPROGRESS|
-|GET/deposit/info|INPROGRESS|
-|GET/deposit/result|INPROGRESS|
-|GET/education/glossary|INPROGRESS|
-|GET/education/faq|INPROGRESS|
-|GET/education|INPROGRESS|
-|GET/education/lessons|INPROGRESS|
-|POST/education/lessons|INPROGRESS|
-|GET/education/get-shared-results|INPROGRESS|
-|GET/education/test|INPROGRESS|
-|POST/education/test|INPROGRESS|
-|GET/education/test-result|INPROGRESS|
-|GET/education/webinars|INPROGRESS|
-|GET/education/webinar-view|INPROGRESS|
-|GET/education/webinar-registration|INPROGRESS|
-|POST/education/webinar-registration|INPROGRESS|
-|GET/event/track|INPROGRESS|
-|GET/finance/get-history|<span style="color:green">COMPLETED</span>.|
-|POST/finance/get-history|<span style="color:green">COMPLETED</span>.|
-|GET/finance/get-history-count|<span style="color:green">COMPLETED</span>.|
-|GET/finance/add-wallet|<span style="color:green">COMPLETED</span>.|
-|POST/finance/add-wallet|<span style="color:green">COMPLETED</span>.|
-|GET/finance/wallets|<span style="color:green">COMPLETED</span>.|
-|POST/finance/delete-wallets|<span style="color:green">COMPLETED</span>.|
-|GET/finance/edit-wallets|<span style="color:green">COMPLETED</span>.|
-|POST/finance/edit-wallets|<span style="color:green">COMPLETED</span>.|
-|GET/guest/get|INPROGRESS|
-|GET/guest/demo-create|INPROGRESS|
-|GET/guide/video|INPROGRESS|
-|POST/login|INPROGRESS|
-|GET/login/auth|INPROGRESS|
-|POST/login/auth|INPROGRESS|
-|GET/login/secure|INPROGRESS|
-|POST/login/secure|INPROGRESS|
-|GET/login/send-email|INPROGRESS|
-|GET/login/send-sms|INPROGRESS|
-|GET/mt/get-list|INPROGRESS|
-|GET/mt/reset-trader|INPROGRESS|
-|GET/mt/set-primary|INPROGRESS|
-|GET/mt/delete-account|INPROGRESS|
-|GET/mt/restore-archive-account|INPROGRESS|
-|GET/mt/restore-dormant-account|INPROGRESS|
-|GET/mt/new-real|INPROGRESS|
-|POST/mt/new-real|INPROGRESS|
-|GET/mt/new-demo|INPROGRESS|
-|POST/mt/new-demo|INPROGRESS|
-|GET/mt/account-change-leverage|INPROGRESS|
-|POST/mt/account-change-leverage|INPROGRESS|
-|GET/mt/account-change-name|INPROGRESS|
-|POST/mt/account-change-name|INPROGRESS|
-|GET/mt/account-change-password|INPROGRESS|
-|POST/mt/account-change-password|INPROGRESS|
-|GET/mt/account-change-investor-password|INPROGRESS|
-|POST/mt/account-change-investor-password|INPROGRESS|
-|GET/mt/account-change-phone-password|INPROGRESS|
-|POST/mt/account-change-phone-password|INPROGRESS|
-|GET/mt/internal-transfer|INPROGRESS|
-|POST/mt/internal-transfer|INPROGRESS|
-|GET/oauth/request|INPROGRESS|
-|GET/oauth/code|INPROGRESS|
-|POST/oauth/token|INPROGRESS|
-|GET/password-recovery|INPROGRESS|
-|POST/password-recovery|INPROGRESS|
-|GET/password-recovery/email|INPROGRESS|
-|POST/password-recovery/email|INPROGRESS|
-|GET/password-recovery/send-email-code|INPROGRESS|
-|GET/password-recovery/phone|INPROGRESS|
-|POST/password-recovery/phone|INPROGRESS|
-|GET/password-recovery/send-phone-code|INPROGRESS|
-|GET/password-recovery/confirm|INPROGRESS|
-|POST/password-recovery/confirm|INPROGRESS|
-|GET/profile/copiers-partner|INPROGRESS|
-|POST/profile/copiers-partner|INPROGRESS|
-|GET/questionnaire-eu|INPROGRESS|
-|POST/questionnaire-eu|INPROGRESS|
-|GET/questionnaire-eu/result|INPROGRESS|
-|GET/questionnaire|INPROGRESS|
-|POST/questionnaire|INPROGRESS|
-|GET/registration|INPROGRESS|
-|POST/registration|INPROGRESS|
-|GET/registration/partner|INPROGRESS|
-|POST/registration/partner|INPROGRESS|
-|GET/reset-password/request|INPROGRESS|
-|POST/reset-password/request|INPROGRESS|
-|GET/reset-password/confirm|INPROGRESS|
-|POST/reset-password/confirm|INPROGRESS|
-|GET/search|INPROGRESS|
-|GET/settings/language-list|<span style="color:green">COMPLETED</span>.|
-|POST/settings/language-set|<span style="color:green">COMPLETED</span>.|
-|GET/settings/password-change|INPROGRESS|
-|POST/settings/password-change|INPROGRESS|
-|GET/signup/email-verification|<span style="color:green">COMPLETED</span>.|
-|POST/signup/email-verification|<span style="color:green">COMPLETED</span>.|
-|GET/signup/send-email-code|<span style="color:green">COMPLETED</span>.|
-|GET/signup/email-change|<span style="color:green">COMPLETED</span>.|
-|POST/signup/email-change|<span style="color:green">COMPLETED</span>.|
-|GET/signup/phone|<span style="color:green">COMPLETED</span>.|
-|POST/signup/phone|<span style="color:green">COMPLETED</span>.|
-|GET/signup/phone-verification|<span style="color:green">COMPLETED</span>.|
-|POST/signup/phone-verification|<span style="color:green">COMPLETED</span>.|
-|GET/signup/send-phone-code|<span style="color:green">COMPLETED</span>.|
-|GET/signup/phone-change|<span style="color:green">COMPLETED</span>.|
-|POST/signup/phone-change|<span style="color:green">COMPLETED</span>.|
-|POST/signup/phone-skip|<span style="color:green">COMPLETED</span>.|
-|GET/signup/detailed-personal|<span style="color:green">COMPLETED</span>.|
-|POST/signup/detailed-personal|<span style="color:green">COMPLETED</span>.|
-|GET/signup/trading-currency|<span style="color:green">COMPLETED</span>.|
-|POST/signup/trading-currency|<span style="color:green">COMPLETED</span>.|
-|GET/signup/residential-address|INPROGRESS|
-|POST/signup/residential-address|INPROGRESS|
-|GET/signup/identity-reset|INPROGRESS|
-|GET/signup/identity-confirmation|<span style="color:green">COMPLETED</span>.|
-|POST/signup/identity-confirmation|<span style="color:green">COMPLETED</span>.|
-|GET/signup/employment-information|<span style="color:green">COMPLETED</span>.|
-|POST/signup/employment-information|<span style="color:green">COMPLETED</span>.|
-|GET/signup/financial-information|<span style="color:green">COMPLETED</span>.|
-|POST/signup/financial-information|<span style="color:green">COMPLETED</span>.|
-|GET/signup/trading-experience|<span style="color:green">COMPLETED</span>.|
-|POST/signup/trading-experience|<span style="color:green">COMPLETED</span>.|
-|GET/signup/step|INPROGRESS|
-|GET/signup/registration-completion|<span style="color:green">COMPLETED</span>.|
-|GET/signup-out|<span style="color:green">COMPLETED</span>.|
-|POST/signup-out|<span style="color:green">COMPLETED</span>.|
-|GET/signup-out/basic|<span style="color:green">COMPLETED</span>.|
-|POST/signup-out/basic|<span style="color:green">COMPLETED</span>.|
-|GET/switch/partner|<span style="color:green">COMPLETED</span>.|
-|POST/switch/partner|<span style="color:green">COMPLETED</span>.|
-|GET/switch/partner-off|INPROGRESS|
-|GET/switch/cqf|INPROGRESS|
-|POST/switch/cqf|INPROGRESS|
-|GET/switch/trading|INPROGRESS|
-|GET/traders/get-traders|INPROGRESS|
-|GET/traders/get-traders-count|INPROGRESS|
-|GET/traders/get-trader-info|INPROGRESS|
-|GET/traders/switch-favorite|INPROGRESS|
-|GET/traders/copy-action|INPROGRESS|
-|GET/traders/copy-close|INPROGRESS|
-|GET/traders/copy-available|INPROGRESS|
-|GET/traders/get-portfolio|INPROGRESS|
-|GET/traders/get-history|INPROGRESS|
-|GET/traders/get-chart-history|INPROGRESS|
-|GET/trading/get-instruments|INPROGRESS|
-|GET/trading/get-instrument|INPROGRESS|
-|GET/trading/switch-favorite|INPROGRESS|
-|GET/trading/get-chart-history|INPROGRESS|
-|GET/trading/analytics|INPROGRESS|
-|GET/user/get|<span style="color:green">COMPLETED</span>.|
-|GET/user/affiliate|<span style="color:green">COMPLETED</span>.|
-|GET/user/sub|INPROGRESS|
-|GET/user/about|INPROGRESS|
-|GET/user/switch-real|INPROGRESS|
-|GET/user/switch-demo|INPROGRESS|
-|GET/user/trader-enable|INPROGRESS|
-|GET/user/trader-disable|INPROGRESS|
-|GET/user/trader-settings|INPROGRESS|
-|POST/user/trader-settings|INPROGRESS|
-|GET/user/trader-edit|INPROGRESS|
-|POST/user/trader-edit|INPROGRESS|
-|GET/user/username|INPROGRESS|
-|POST/user/username|INPROGRESS|
-|GET/user/trader-info|INPROGRESS|
-|GET/user/swap-free-enable|INPROGRESS|
-|GET/user/get-history|INPROGRESS|
-|POST/user/get-history|INPROGRESS|
-|GET/user/get-history-count|INPROGRESS|
-|GET/user/get-copiers|INPROGRESS|
-|GET/user/get-copiers-history|INPROGRESS|
-|GET/user/copy-pause|INPROGRESS|
-|GET/user/copy-resume|INPROGRESS|
-|GET/user/get-chart-history|INPROGRESS|
-|GET/user/upload-avatar|INPROGRESS|
-|GET/user/notification-token|INPROGRESS|
-|GET/user/notifications|INPROGRESS|
-|POST/user/notifications|INPROGRESS|
-|GET/user/auth-google|INPROGRESS|
-|POST/user/auth-google|INPROGRESS|
-|GET/user/auth-sms|INPROGRESS|
-|POST/user/auth-sms|INPROGRESS|
-|GET/user/auth-email|INPROGRESS|
-|POST/user/auth-email|INPROGRESS|
-|GET/user/re-send-email|INPROGRESS|
-|GET/user/re-send-sms|INPROGRESS|
-|GET/user/list-status-auth|INPROGRESS|
-|GET/user/session|INPROGRESS|
-|GET/user/destroy-session|INPROGRESS|
-|GET/user/destroy-all-sessions|INPROGRESS|
-|GET/user/logout|<span style="color:green">COMPLETED</span>.|
-|GET/user/push-notification|INPROGRESS|
-|POST/user/push-notification|INPROGRESS|
-|POST/user/push-notification-all-read|INPROGRESS|
-|POST/user/push-notification-all-delete|INPROGRESS|
-|GET/user/risk-message-hide|INPROGRESS|
-|GET/verification/get|<span style="color:green">COMPLETED</span>.|
-|GET/verification/send-email-code|INPROGRESS|
-|GET/verification/check-email-code|INPROGRESS|
-|GET/verification/send-phone-code|INPROGRESS|
-|GET/verification/check-phone-code|INPROGRESS|
-|GET/verification/change-partner|INPROGRESS|
-|POST/verification/change-partner|INPROGRESS|
-|GET/verification/edit-identity|INPROGRESS|
-|POST/verification/edit-identity|INPROGRESS|
-|GET/verification/edit-address|INPROGRESS|
-|POST/verification/edit-address|INPROGRESS|
-|GET/verification/edit-email|INPROGRESS|
-|POST/verification/edit-email|INPROGRESS|
-|GET/verification/edit-phone|INPROGRESS|
-|POST/verification/edit-phone|INPROGRESS|
-|GET/verification/upload-document|INPROGRESS|
-|GET/verification/pep|INPROGRESS|
-|POST/verification/pep|INPROGRESS|
-|GET/verification/upload-document-info|INPROGRESS|
-|GET/verification/sumsub|INPROGRESS|
-|GET/verification/edit-full|INPROGRESS|
-|POST/verification/edit-full|INPROGRESS|
-|GET/vps/get-info|INPROGRESS|
-|GET/vps/buy|INPROGRESS|
-|POST/vps/buy|INPROGRESS|
-|GET/vps/pay|INPROGRESS|
-|POST/vps/pay|INPROGRESS|
-|GET/vps/switch-renewal|INPROGRESS|
-|GET/withdrawal/list|INPROGRESS|
-|GET/withdrawal/list-grouped|INPROGRESS|
-|GET/withdrawal/request|INPROGRESS|
-|POST/withdrawal/request|INPROGRESS|
-|GET/withdrawal/info|INPROGRESS|
-|GET/withdrawal/confirm-send|INPROGRESS|
-|GET/withdrawal/confirm-check|INPROGRESS|
-|GET/withdrawal/cancel|INPROGRESS|
-|GET/zone/get|INPROGRESS|
-|GET/social-networks|<span style="color:green">COMPLETED</span>.|
+|  :----:  |  :----:  |
+|GET /affiliate-calculator|INPROGRESS|
+|POST /affiliate-calculator|INPROGRESS|
+|GET /affiliate-contests|INPROGRESS|
+|GET /affiliate-contests/partner|INPROGRESS|
+|GET /affiliate-contests/partner-information|INPROGRESS|
+|GET /affiliate-contests/partner-tables|INPROGRESS|
+|GET /affiliate-contests/participate|INPROGRESS|
+|POST /affiliate-contests/participate|INPROGRESS|
+|GET /affiliate-contests/annual-ib-vietnam|INPROGRESS|
+|GET /affiliate-contests/lucky-ticket|INPROGRESS|
+|GET /affiliate|$${\color{green}COMPLETED}$$|
+|GET /affiliate/view|INPROGRESS|
+|GET /affiliate/view-referrals|$${\color{green}COMPLETED}$$|
+|GET /affiliate/network|INPROGRESS|
+|GET /affiliate/export-commissions|$${\color{green}COMPLETED}$$|
+|GET /affiliate/create-company|$${\color{green}COMPLETED}$$|
+|POST /affiliate/create-company|$${\color{green}COMPLETED}$$|
+|GET /affiliate/edit-company|$${\color{green}COMPLETED}$$|
+|POST /affiliate/edit-company|$${\color{green}COMPLETED}$$|
+|GET /affiliate/portfolio|INPROGRESS|
+|GET /affiliate/hold-information|INPROGRESS|
+|GET /affiliate/transfer|INPROGRESS|
+|POST /affiliate/transfer|INPROGRESS|
+|POST /affiliate/referral-link|INPROGRESS|
+|POST /affiliate/activation-deposit-click|INPROGRESS|
+|GET /affiliate/questionnaire|$${\color{green}COMPLETED}$$|
+|POST /affiliate/questionnaire|$${\color{green}COMPLETED}$$|
+|GET /affiliate/list-links|INPROGRESS|
+|GET /affiliate/search|$${\color{green}COMPLETED}$$|
+|GET /affiliate-programs|INPROGRESS|
+|POST /affiliate-programs|INPROGRESS|
+|GET /affiliate-programs/programs|INPROGRESS|
+|GET /affiliate-promo|INPROGRESS|
+|GET /affiliate-promo/banners|INPROGRESS|
+|GET /affiliate-promo/videos|INPROGRESS|
+|GET /affiliate-promo/campaign|INPROGRESS|
+|GET /affiliate-promo/landings|INPROGRESS|
+|GET /affiliate-promo/handouts|INPROGRESS|
+|GET /affiliate-promo/avatars|INPROGRESS|
+|GET /affiliate-promo/make-application|INPROGRESS|
+|POST /affiliate-promo/make-application|INPROGRESS|
+|GET /analytics|INPROGRESS|
+|GET /analytics/signals|INPROGRESS|
+|GET /analytics/calendar|INPROGRESS|
+|GET /analytics/calendar-filter|INPROGRESS|
+|GET /analytics/interest-rates|INPROGRESS|
+|GET /bring-friend|INPROGRESS|
+|GET /bring-friend/banner|INPROGRESS|
+|GET /chart/open|INPROGRESS|
+|GET /chart/get-history|INPROGRESS|
+|GET /chart/get-symbol-list|INPROGRESS|
+|GET /chart/get-users-trades|INPROGRESS|
+|GET /chart/get-bets|INPROGRESS|
+|GET /chart/status-instrument|INPROGRESS|
+|GET /chart/get-user-list-info|INPROGRESS|
+|GET /chart/analytics-get-country-list|INPROGRESS|
+|GET /chart/analytics-get-calendar|INPROGRESS|
+|GET /chart/analytics-state-list|INPROGRESS|
+|GET /chart/state-list|INPROGRESS|
+|GET /chart/state-favorite|INPROGRESS|
+|GET /chart/state-public|INPROGRESS|
+|GET /chart/state-get-by-id|INPROGRESS|
+|GET /chart/state-get-default|INPROGRESS|
+|GET /chart/state-delete|INPROGRESS|
+|GET /chart/state-delete-default|INPROGRESS|
+|GET /chart/template-list|INPROGRESS|
+|GET /chart/template-save|INPROGRESS|
+|GET /chart/template-get|INPROGRESS|
+|GET /chart/template-delete|INPROGRESS|
+|GET /chart/indicator-list|INPROGRESS|
+|GET /chart/indicator-save|INPROGRESS|
+|GET /chart/indicator-get|INPROGRESS|
+|GET /chart/indicator-rename|INPROGRESS|
+|GET /chart/indicator-delete|INPROGRESS|
+|GET /chart-profile/get-history|INPROGRESS|
+|GET /chart-profile/state-list|INPROGRESS|
+|GET /chart-profile/state-save|INPROGRESS|
+|GET /chart-profile/state-favorite|INPROGRESS|
+|GET /chart-profile/state-public|INPROGRESS|
+|GET /chart-profile/state-get-by-id|INPROGRESS|
+|GET /chart-profile/state-get-default|INPROGRESS|
+|GET /chart-profile/state-delete|INPROGRESS|
+|GET /chart-profile/state-delete-default|INPROGRESS|
+|GET /chart-profile/template-list|INPROGRESS|
+|GET /chart-profile/template-save|INPROGRESS|
+|GET /chart-profile/template-get|INPROGRESS|
+|GET /chart-profile/template-delete|INPROGRESS|
+|GET /chart-profile/indicator-list|INPROGRESS|
+|GET /chart-profile/indicator-save|INPROGRESS|
+|GET /chart-profile/indicator-get|INPROGRESS|
+|GET /chart-profile/indicator-rename|INPROGRESS|
+|GET /chart-profile/indicator-delete|INPROGRESS|
+|GET /chart-trader/get-history|INPROGRESS|
+|GET /chart-trader/state-list|INPROGRESS|
+|GET /chart-trader/state-save|INPROGRESS|
+|GET /chart-trader/state-favorite|INPROGRESS|
+|GET /chart-trader/state-public|INPROGRESS|
+|GET /chart-trader/state-get-by-id|INPROGRESS|
+|GET /chart-trader/state-get-default|INPROGRESS|
+|GET /chart-trader/state-delete|INPROGRESS|
+|GET /chart-trader/state-delete-default|INPROGRESS|
+|GET /chart-trader/template-list|INPROGRESS|
+|GET /chart-trader/template-save|INPROGRESS|
+|GET /chart-trader/template-get|INPROGRESS|
+|GET /chart-trader/template-delete|INPROGRESS|
+|GET /chart-trader/indicator-list|INPROGRESS|
+|GET /chart-trader/indicator-save|INPROGRESS|
+|GET /chart-trader/indicator-get|INPROGRESS|
+|GET /chart-trader/indicator-rename|INPROGRESS|
+|GET /chart-trader/indicator-delete|INPROGRESS|
+|GET /ct/get-list|INPROGRESS|
+|GET /ct/new|INPROGRESS|
+|POST /ct/new|INPROGRESS|
+|GET /ct/account-change-leverage|INPROGRESS|
+|POST /ct/account-change-leverage|INPROGRESS|
+|GET /ct/account-change-password|INPROGRESS|
+|POST /ct/account-change-password|INPROGRESS|
+|GET /demo/deposit|INPROGRESS|
+|GET /deposit/list|$${\color{green}COMPLETED}$$|
+|GET /deposit/list-grouped|$${\color{green}COMPLETED}$$|
+|GET /deposit/request|INPROGRESS|
+|POST /deposit/request|INPROGRESS|
+|GET /deposit/info|INPROGRESS|
+|GET /deposit/result|INPROGRESS|
+|GET /education/glossary|INPROGRESS|
+|GET /education/faq|INPROGRESS|
+|GET /education|INPROGRESS|
+|GET /education/lessons|INPROGRESS|
+|POST /education/lessons|INPROGRESS|
+|GET /education/get-shared-results|INPROGRESS|
+|GET /education/test|INPROGRESS|
+|POST /education/test|INPROGRESS|
+|GET /education/test-result|INPROGRESS|
+|GET /education/webinars|INPROGRESS|
+|GET /education/webinar-view|INPROGRESS|
+|GET /education/webinar-registration|INPROGRESS|
+|POST /education/webinar-registration|INPROGRESS|
+|GET /event/track|INPROGRESS|
+|GET /finance/get-history|$${\color{green}COMPLETED}$$|
+|POST /finance/get-history|$${\color{green}COMPLETED}$$|
+|GET /finance/get-history-count|$${\color{green}COMPLETED}$$|
+|GET /finance/add-wallet|$${\color{green}COMPLETED}$$|
+|POST /finance/add-wallet|$${\color{green}COMPLETED}$$|
+|GET /finance/wallets|$${\color{green}COMPLETED}$$|
+|POST /finance/delete-wallets|$${\color{green}COMPLETED}$$|
+|GET /finance/edit-wallets|$${\color{green}COMPLETED}$$|
+|POST /finance/edit-wallets|$${\color{green}COMPLETED}$$|
+|GET /guest/get|INPROGRESS|
+|GET /guest/demo-create|INPROGRESS|
+|GET /guide/video|INPROGRESS|
+|POST /login|INPROGRESS|
+|GET /login/auth|INPROGRESS|
+|POST /login/auth|INPROGRESS|
+|GET /login/secure|INPROGRESS|
+|POST /login/secure|INPROGRESS|
+|GET /login/send-email|INPROGRESS|
+|GET /login/send-sms|INPROGRESS|
+|GET /mt/get-list|INPROGRESS|
+|GET /mt/reset-trader|INPROGRESS|
+|GET /mt/set-primary|INPROGRESS|
+|GET /mt/delete-account|INPROGRESS|
+|GET /mt/restore-archive-account|INPROGRESS|
+|GET /mt/restore-dormant-account|INPROGRESS|
+|GET /mt/new-real|INPROGRESS|
+|POST /mt/new-real|INPROGRESS|
+|GET /mt/new-demo|INPROGRESS|
+|POST /mt/new-demo|INPROGRESS|
+|GET /mt/account-change-leverage|INPROGRESS|
+|POST /mt/account-change-leverage|INPROGRESS|
+|GET /mt/account-change-name|INPROGRESS|
+|POST /mt/account-change-name|INPROGRESS|
+|GET /mt/account-change-password|INPROGRESS|
+|POST /mt/account-change-password|INPROGRESS|
+|GET /mt/account-change-investor-password|INPROGRESS|
+|POST /mt/account-change-investor-password|INPROGRESS|
+|GET /mt/account-change-phone-password|INPROGRESS|
+|POST /mt/account-change-phone-password|INPROGRESS|
+|GET /mt/internal-transfer|INPROGRESS|
+|POST /mt/internal-transfer|INPROGRESS|
+|GET /oauth/request|INPROGRESS|
+|GET /oauth/code|INPROGRESS|
+|POST /oauth/token|INPROGRESS|
+|GET /password-recovery|INPROGRESS|
+|POST /password-recovery|INPROGRESS|
+|GET /password-recovery/email|INPROGRESS|
+|POST /password-recovery/email|INPROGRESS|
+|GET /password-recovery/send-email-code|INPROGRESS|
+|GET /password-recovery/phone|INPROGRESS|
+|POST /password-recovery/phone|INPROGRESS|
+|GET /password-recovery/send-phone-code|INPROGRESS|
+|GET /password-recovery/confirm|INPROGRESS|
+|POST /password-recovery/confirm|INPROGRESS|
+|GET /profile/copiers-partner|INPROGRESS|
+|POST /profile/copiers-partner|INPROGRESS|
+|GET /questionnaire-eu|INPROGRESS|
+|POST /questionnaire-eu|INPROGRESS|
+|GET /questionnaire-eu/result|INPROGRESS|
+|GET /questionnaire|INPROGRESS|
+|POST /questionnaire|INPROGRESS|
+|GET /registration|INPROGRESS|
+|POST /registration|INPROGRESS|
+|GET /registration/partner|INPROGRESS|
+|POST /registration/partner|INPROGRESS|
+|GET /reset-password/request|INPROGRESS|
+|POST /reset-password/request|INPROGRESS|
+|GET /reset-password/confirm|INPROGRESS|
+|POST /reset-password/confirm|INPROGRESS|
+|GET /search|INPROGRESS|
+|GET /settings/language-list|$${\color{green}COMPLETED}$$|
+|POST /settings/language-set|$${\color{green}COMPLETED}$$|
+|GET /settings/password-change|INPROGRESS|
+|POST /settings/password-change|INPROGRESS|
+|GET /signup/email-verification|$${\color{green}COMPLETED}$$|
+|POST /signup/email-verification|$${\color{green}COMPLETED}$$|
+|GET /signup/send-email-code|$${\color{green}COMPLETED}$$|
+|GET /signup/email-change|$${\color{green}COMPLETED}$$|
+|POST /signup/email-change|$${\color{green}COMPLETED}$$|
+|GET /signup/phone|$${\color{green}COMPLETED}$$|
+|POST /signup/phone|$${\color{green}COMPLETED}$$|
+|GET /signup/phone-verification|$${\color{green}COMPLETED}$$|
+|POST /signup/phone-verification|$${\color{green}COMPLETED}$$|
+|GET /signup/send-phone-code|$${\color{green}COMPLETED}$$|
+|GET /signup/phone-change|$${\color{green}COMPLETED}$$|
+|POST /signup/phone-change|$${\color{green}COMPLETED}$$|
+|POST /signup/phone-skip|$${\color{green}COMPLETED}$$|
+|GET /signup/detailed-personal|$${\color{green}COMPLETED}$$|
+|POST /signup/detailed-personal|$${\color{green}COMPLETED}$$|
+|GET /signup/trading-currency|$${\color{green}COMPLETED}$$|
+|POST /signup/trading-currency|$${\color{green}COMPLETED}$$|
+|GET /signup/residential-address|INPROGRESS|
+|POST /signup/residential-address|INPROGRESS|
+|GET /signup/identity-reset|INPROGRESS|
+|GET /signup/identity-confirmation|$${\color{green}COMPLETED}$$|
+|POST /signup/identity-confirmation|$${\color{green}COMPLETED}$$|
+|GET /signup/employment-information|$${\color{green}COMPLETED}$$|
+|POST /signup/employment-information|$${\color{green}COMPLETED}$$|
+|GET /signup/financial-information|$${\color{green}COMPLETED}$$|
+|POST /signup/financial-information|$${\color{green}COMPLETED}$$|
+|GET /signup/trading-experience|$${\color{green}COMPLETED}$$|
+|POST /signup/trading-experience|$${\color{green}COMPLETED}$$|
+|GET /signup/step|INPROGRESS|
+|GET /signup/registration-completion|$${\color{green}COMPLETED}$$|
+|GET /signup-out|$${\color{green}COMPLETED}$$|
+|POST /signup-out|$${\color{green}COMPLETED}$$|
+|GET /signup-out/basic|$${\color{green}COMPLETED}$$|
+|POST /signup-out/basic|$${\color{green}COMPLETED}$$|
+|GET /switch/partner|$${\color{green}COMPLETED}$$|
+|POST /switch/partner|$${\color{green}COMPLETED}$$|
+|GET /switch/partner-off|INPROGRESS|
+|GET /switch/cqf|INPROGRESS|
+|POST /switch/cqf|INPROGRESS|
+|GET /switch/trading|INPROGRESS|
+|GET /traders/get-traders|INPROGRESS|
+|GET /traders/get-traders-count|INPROGRESS|
+|GET /traders/get-trader-info|INPROGRESS|
+|GET /traders/switch-favorite|INPROGRESS|
+|GET /traders/copy-action|INPROGRESS|
+|GET /traders/copy-close|INPROGRESS|
+|GET /traders/copy-available|INPROGRESS|
+|GET /traders/get-portfolio|INPROGRESS|
+|GET /traders/get-history|INPROGRESS|
+|GET /traders/get-chart-history|INPROGRESS|
+|GET /trading/get-instruments|INPROGRESS|
+|GET /trading/get-instrument|INPROGRESS|
+|GET /trading/switch-favorite|INPROGRESS|
+|GET /trading/get-chart-history|INPROGRESS|
+|GET /trading/analytics|INPROGRESS|
+|GET /user/get|$${\color{green}COMPLETED}$$|
+|GET /user/affiliate|$${\color{green}COMPLETED}$$|
+|GET /user/sub|INPROGRESS|
+|GET /user/about|INPROGRESS|
+|GET /user/switch-real|INPROGRESS|
+|GET /user/switch-demo|INPROGRESS|
+|GET /user/trader-enable|INPROGRESS|
+|GET /user/trader-disable|INPROGRESS|
+|GET /user/trader-settings|INPROGRESS|
+|POST /user/trader-settings|INPROGRESS|
+|GET /user/trader-edit|INPROGRESS|
+|POST /user/trader-edit|INPROGRESS|
+|GET /user/username|INPROGRESS|
+|POST /user/username|INPROGRESS|
+|GET /user/trader-info|INPROGRESS|
+|GET /user/swap-free-enable|INPROGRESS|
+|GET /user/get-history|INPROGRESS|
+|POST /user/get-history|INPROGRESS|
+|GET /user/get-history-count|INPROGRESS|
+|GET /user/get-copiers|INPROGRESS|
+|GET /user/get-copiers-history|INPROGRESS|
+|GET /user/copy-pause|INPROGRESS|
+|GET /user/copy-resume|INPROGRESS|
+|GET /user/get-chart-history|INPROGRESS|
+|GET /user/upload-avatar|INPROGRESS|
+|GET /user/notification-token|INPROGRESS|
+|GET /user/notifications|INPROGRESS|
+|POST /user/notifications|INPROGRESS|
+|GET /user/auth-google|INPROGRESS|
+|POST /user/auth-google|INPROGRESS|
+|GET /user/auth-sms|INPROGRESS|
+|POST /user/auth-sms|INPROGRESS|
+|GET /user/auth-email|INPROGRESS|
+|POST /user/auth-email|INPROGRESS|
+|GET /user/re-send-email|INPROGRESS|
+|GET /user/re-send-sms|INPROGRESS|
+|GET /user/list-status-auth|INPROGRESS|
+|GET /user/session|INPROGRESS|
+|GET /user/destroy-session|INPROGRESS|
+|GET /user/destroy-all-sessions|INPROGRESS|
+|GET /user/logout|$${\color{green}COMPLETED}$$|
+|GET /user/push-notification|INPROGRESS|
+|POST /user/push-notification|INPROGRESS|
+|POST /user/push-notification-all-read|INPROGRESS|
+|POST /user/push-notification-all-delete|INPROGRESS|
+|GET /user/risk-message-hide|INPROGRESS|
+|GET /verification/get|$${\color{green}COMPLETED}$$|
+|GET /verification/send-email-code|INPROGRESS|
+|GET /verification/check-email-code|INPROGRESS|
+|GET /verification/send-phone-code|INPROGRESS|
+|GET /verification/check-phone-code|INPROGRESS|
+|GET /verification/change-partner|INPROGRESS|
+|POST /verification/change-partner|INPROGRESS|
+|GET /verification/edit-identity|INPROGRESS|
+|POST /verification/edit-identity|INPROGRESS|
+|GET /verification/edit-address|INPROGRESS|
+|POST /verification/edit-address|INPROGRESS|
+|GET /verification/edit-email|INPROGRESS|
+|POST /verification/edit-email|INPROGRESS|
+|GET /verification/edit-phone|INPROGRESS|
+|POST /verification/edit-phone|INPROGRESS|
+|GET /verification/upload-document|INPROGRESS|
+|GET /verification/pep|INPROGRESS|
+|POST /verification/pep|INPROGRESS|
+|GET /verification/upload-document-info|INPROGRESS|
+|GET /verification/sumsub|INPROGRESS|
+|GET /verification/edit-full|INPROGRESS|
+|POST /verification/edit-full|INPROGRESS|
+|GET /vps/get-info|INPROGRESS|
+|GET /vps/buy|INPROGRESS|
+|POST /vps/buy|INPROGRESS|
+|GET /vps/pay|INPROGRESS|
+|POST /vps/pay|INPROGRESS|
+|GET /vps/switch-renewal|INPROGRESS|
+|GET /withdrawal/list|INPROGRESS|
+|GET /withdrawal/list-grouped|INPROGRESS|
+|GET /withdrawal/request|INPROGRESS|
+|POST /withdrawal/request|INPROGRESS|
+|GET /withdrawal/info|INPROGRESS|
+|GET /withdrawal/confirm-send|INPROGRESS|
+|GET /withdrawal/confirm-check|INPROGRESS|
+|GET /withdrawal/cancel|INPROGRESS|
+|GET /zone/get|INPROGRESS|
+|GET /social-networks|$${\color{green}COMPLETED}$$|

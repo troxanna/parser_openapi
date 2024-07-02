@@ -38,11 +38,12 @@ void print_method(char *path, int status, char *type, FILE *fp) {
 	fputs("|", fp);
 	// fputs(BLACK, fp);
 	fputs(type, fp);
+	fputs(" ", fp);
 	fputs(path, fp);
 	fputs("|", fp);
 	if (status == COMPLETED) {	
 		// fputs(GREEN, fp);
-		fputs("<span style=\"color:green\">COMPLETED</span>.", fp);
+		fputs("$${\\color{green}COMPLETED}$$", fp);
 	} else if (status == INPROGRESS) {
 		// fputs(YELLOW, fp);
 		fputs("INPROGRESS", fp);
