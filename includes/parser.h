@@ -71,6 +71,8 @@ void		handler_openapi(FILE * fp_openapi, t_flags *flags, t_method **methods);
 void		calculate_total_count(t_method **methods, t_counter *counter);
 void		print_total_progress(FILE *fp, t_counter *counter);
 void		write_progress(FILE	*fp, t_method **methods, t_counter *counter);
+void		validate_args(int argc, char *argv[]);
+int			try_open_file(char	*filename, char *mode, FILE **file);
 
 
 

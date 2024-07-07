@@ -12,6 +12,27 @@ void	free_item(t_method *item)
 	}
 }
 
+void validate_args(int argc, char *argv[]) {
+	char *str = NULL;
+	char *ptr = NULL;
+	
+	if (argc != 2) {
+		fputs("Error count arguments", stdout);
+		exit(EXIT_FAILURE);
+	}
+
+	str = argv[1];
+	if (strlen(str) < 6) {
+		fputs("Error file name", stdout);
+		exit(EXIT_FAILURE);
+	}
+	ptr = str + strlen(str) - 4;
+	if (strstr(ptr, "json") == NULL) {
+		fputs("The file must have a json extension", stdout);
+		exit(EXIT_FAILURE);
+	}
+}
+
 void	free_memory(t_method **methods)
 {
 	t_method	*new_item;
@@ -165,6 +186,14 @@ t_method *get_last_item(t_method **methods) {
 	return ptr;
 }
 
+int try_open_file(char	*filename, char *mode, FILE **file) {
+
+	*file = fopen(filename, mode);
+	if (file == NULL) {
+		return 0;
+	}
+	return 1;
+}
 
 void init_data(t_flags *flags, t_counter *counter) {
 	flags->close_bracket = 0;
