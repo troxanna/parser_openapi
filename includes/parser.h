@@ -17,7 +17,7 @@
 #define CLOSE_BRACKET "}"
 #define OPEN_BRACKET "{"
 
-#define KEY_FOR_NOT_TESTED "not_tested"
+#define KEY_FOR_NOT_TESTED "not-tested"
 
 //Colors
 // #define RED "<span style=\"color:red\">some *blue* text</span>."
