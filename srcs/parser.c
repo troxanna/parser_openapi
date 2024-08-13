@@ -69,8 +69,8 @@ void write_progress(FILE	*fp, t_method **methods, t_counter *counter) {
 	//write total progress methods in progress file
 	print_total_progress(fp, counter);
 
-	fputs("| Method      | Status |\n", fp);
-	fputs("|  :---     |  :----:  |\n", fp);
+	fputs("| Method      | Status |   Comment   |\n", fp);
+	fputs("|  :---     |  :----:  |  :----:|\n", fp);
 
 	//write method and his status in progress file
 	while (ptr != NULL) {
