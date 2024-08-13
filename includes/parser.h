@@ -17,6 +17,8 @@
 #define CLOSE_BRACKET "}"
 #define OPEN_BRACKET "{"
 
+#define KEY_FOR_NOT_TESTED "not_tested"
+
 //Colors
 // #define RED "<span style=\"color:red\">some *blue* text</span>."
 // #define BLACK "\033[39m"
@@ -43,6 +45,7 @@ typedef struct s_method
 	int status;
 	char *path;
 	char *type;
+    int is_not_tested;
 	struct s_method	*next;
 }				t_method;
 
@@ -55,7 +58,7 @@ typedef enum status {
 
 
 int			is_allow_symbol(char ch);
-void		print_method(char *path, int status, char *type, FILE *fp);
+void		print_method(char *path, int status, char *type, FILE *fp, int is_not_tested);
 void		free_item(t_method *item);
 void		free_memory(t_method **methods);
 void		clear_not_allow_symbols(char *input, char *output);

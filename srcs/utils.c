@@ -70,13 +70,14 @@ void print_total_progress(FILE *fp, t_counter *counter) {
 	fputs("|\n\n", fp);
 }
 
-void print_method(char *path, int status, char *type, FILE *fp) {
+void print_method(char *path, int status, char *type, FILE *fp, int is_not_tested) {
 	fputs("|", fp);
 	fputs(type, fp);
 	fputs(" ", fp);
 	fputs(path, fp);
 	fputs("|", fp);
-	if (status == COMPLETED) {	
+    
+	if (status == COMPLETED) {
 		fputs("COMPLETED", fp);
 	} else if (status == INPROGRESS) {
 		fputs("INPROGRESS", fp);
@@ -85,6 +86,10 @@ void print_method(char *path, int status, char *type, FILE *fp) {
 	} else {
 		return ;
 	}
+    fputs("|", fp);
+    if (is_not_tested == 1) {
+        fputs("NOT FOR TESTING", fp);
+    }
 	fputs("|\n", fp);
 }
 
@@ -150,6 +155,7 @@ t_method 	*new_item(void)
 	new_method->type = NULL;
 	new_method->status = NONE;
 	new_method->next = NULL;
+    new_method->is_not_tested = 0;
 	return (new_method);
 }
 

@@ -1,7 +1,7 @@
-| Total:      | 351|
+| Total:      | 354|
 |  :---     |  :----:  |
-| Completed:      | 59|
-| Inprogress:      | 292|
+| Completed:      | 66|
+| Inprogress:      | 288|
 
 | Method      | Status |
 |  :---     |  :----:  |
@@ -125,8 +125,8 @@
 |GET /demo/deposit|INPROGRESS|
 |GET /deposit/list|COMPLETED|
 |GET /deposit/list-grouped|COMPLETED|
-|GET /deposit/request|INPROGRESS|
-|POST /deposit/request|INPROGRESS|
+|GET /deposit/request|COMPLETED|
+|POST /deposit/request|COMPLETED|
 |GET /deposit/info|INPROGRESS|
 |GET /deposit/result|INPROGRESS|
 |GET /education/glossary|INPROGRESS|
@@ -334,9 +334,10 @@
 |GET /verification/edit-phone|INPROGRESS|
 |POST /verification/edit-phone|INPROGRESS|
 |GET /verification/upload-document|INPROGRESS|
+|POST /verification/upload-document|COMPLETED|
 |GET /verification/pep|INPROGRESS|
 |POST /verification/pep|INPROGRESS|
-|GET /verification/upload-document-info|INPROGRESS|
+|GET /verification/upload-document-info|COMPLETED|
 |GET /verification/sumsub|INPROGRESS|
 |GET /verification/edit-full|INPROGRESS|
 |POST /verification/edit-full|INPROGRESS|
@@ -353,6 +354,8 @@
 |GET /withdrawal/info|INPROGRESS|
 |GET /withdrawal/confirm-send|INPROGRESS|
 |GET /withdrawal/confirm-check|INPROGRESS|
-|GET /withdrawal/cancel|INPROGRESS|
+|GET /withdrawal/cancel|COMPLETED|
 |GET /zone/get|INPROGRESS|
 |GET /social-networks|COMPLETED|
+|GET /affiliate/view-referral|COMPLETED|
+|GET /affiliate/partner-search|COMPLETED|

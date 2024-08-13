@@ -29,8 +29,11 @@ ssize_t read;
 			}
 			//Check "operationId" object in openapi file. If he is, then method is updated (status is completed).
 			if (search_item(OPERATION_ID, line)) {
-				flags->is_operation_id = 1;
-				get_last_item(methods)->status = COMPLETED;
+                if (search_item(KEY_FOR_NOT_TESTED, line)) {
+                    get_last_item(methods)->is_not_tested = 1;
+                }
+                flags->is_operation_id = 1; // а надо вообще это?)
+                get_last_item(methods)->status = COMPLETED;
 			}
 			//Check "GET" or "POST" object in openapi file. If he is, then adding a new method to the tree.
 			if (search_item(GET, line) || search_item(POST, line)) {
@@ -72,7 +75,7 @@ void write_progress(FILE	*fp, t_method **methods, t_counter *counter) {
 	//write method and his status in progress file
 	while (ptr != NULL) {
 		if (ptr->path != NULL)
-			print_method(ptr->path, ptr->status, ptr->type, fp);
+			print_method(ptr->path, ptr->status, ptr->type, fp, ptr->is_not_tested);
 		ptr = ptr->next;
 	}	
 }
